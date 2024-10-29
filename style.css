@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(255, 252, 252);
+  margin: 0 auto;
+}
+.container {
+  background-image: url(images/backgrounds/background-top.svg);
+  background-size: contain;
+  height: 90vh;
+}
+
+header,
+.front-img {
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  height: 75px;
+  width: 150px;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+.empower-logo,
+.flex-row,
+.Christina-kray,
+.icons {
+  display: flex;
+}
+.flex-row {
+  justify-content: space-evenly;
+}
+.empower-box,
+#large-person-img {
+  height: 200px;
+  width: 350px;
+}
+.empower-box > h1 {
+  font-size: 2.5rem;
+  height: 200px;
+  width: 250px;
+}
+.key-benefits-text,
+.why-front {
+  text-align: center;
+}
+.icons {
+  justify-content: space-evenly;
+}
+.icon-cards {
+  background-color: white;
+  border: 2px transparent;
+  width: 00px;
+  height: 300px;
+  box-shadow: 5px 5px 5px dimgray;
+}
+
+.logo-icons img,
+.hub-spot-logo,
+.company-logos,
+.icons img {
+  height: 40px;
+  width: 40px;
+}
