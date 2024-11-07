@@ -2,63 +2,134 @@ body {
   background-color: rgb(255, 252, 252);
   margin: 0 auto;
 }
+
 .container {
   background-image: url(images/backgrounds/background-top.svg);
-  background-size: contain;
   height: 90vh;
-}
-
-header,
-.front-img {
-  display: flex;
-  justify-content: space-between;
-}
-header img {
-  height: 75px;
-  width: 150px;
-}
-.content-box {
+  width: 100%;
+  background-size: contain;
   display: flex;
   flex-direction: column;
 }
-.empower-logo,
-.flex-row,
-.Christina-kray,
-.icons {
+header {
   display: flex;
+  justify-content: space-between;
+  height: 150px;
+  width: 100%;
 }
-.flex-row {
+span {
+  height: 150px;
+  width: 200px;
+  margin-left: 50px;
+  align-content: center;
+}
+header i {
+  color: transparent;
+}
+nav {
+  display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
 }
-.empower-box,
-#large-person-img {
-  height: 200px;
-  width: 350px;
+nav a {
+  height: 30px;
+  width: 80px;
+  font-size: 1.5rem;
 }
-.empower-box > h1 {
-  font-size: 2.5rem;
-  height: 200px;
-  width: 250px;
+.empower {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-.key-benefits-text,
-.why-front {
-  text-align: center;
-}
-.icons {
-  justify-content: space-evenly;
-}
-.icon-cards {
-  background-color: white;
-  border: 2px transparent;
-  width: 00px;
-  height: 300px;
-  box-shadow: 5px 5px 5px dimgray;
+.logo-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.logo-icons img,
-.hub-spot-logo,
-.company-logos,
-.icons img {
-  height: 40px;
-  width: 40px;
+#google {
+  grid-column: 2;
+  grid-row: 1;
+}
+#atlassian {
+  grid-column: 3;
+  grid-row: 1;
+}
+#asana {
+  grid-column: 5;
+  grid-row: 1;
+}
+#paypal {
+  grid-column: 2;
+  grid-row: 2;
+}
+#weave {
+  grid-column: 4;
+  grid-row: 2;
+}
+#google-a {
+  grid-column: 2;
+  grid-row: 3;
+}
+#calender {
+  grid-column: 5;
+  grid-row: 4;
+}
+
+.logo-icons img {
+  border: 1px transparent;
+  border-radius: 60%;
+  box-shadow: 2px 5px 5px lightgrey;
+  height: 60px;
+  width: 60px;
+}
+.empower-text-box h1 {
+  font-size: 2.5rem;
+  width: 250px;
+}
+
+@media all and (max-width: 1023px) {
+  .container {
+    background-image: url(images/backgrounds/background-top.svg);
+    height: 90vh;
+    width: 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+  span,
+  header img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+  header i {
+    font-size: 25px;
+    color: dimgray;
+    padding: 30px;
+  }
+}
+@media all and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+  i {
+    padding: 0;
+  }
 }
